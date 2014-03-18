@@ -1,0 +1,89 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html;charset=utf-8", "http-equiv" => "Content-Type"}
+    %title WizBox for iPhone and iPod touch
+    %link{:href => "style.css", :rel => "stylesheet", :type => "text/css"}
+    %link{:href => "http://www.studioamanga.com/img/favicon.ico", :rel => "shortcut icon"}
+    %link{:href => "../img/touch-icon-iphone4.png", :rel => "apple-touch-icon-precomposed"}
+    %link{:href => "../img/touch-icon-ipad.png", :rel => "apple-touch-icon-precomposed", :sizes => "72x72"}
+    %meta{:content => "Studio AMANgA is an independant website/app producer.", :name => "description"}
+    %meta{:content => "width=device-width", :name => "viewport"}
+    %meta{:content => "app-id=325184067", :name => "apple-itunes-app"}
+    :javascript
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-18279263-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    :javascript
+      currentScreenshotIndex = 1;
+      previousScreenshot = null;
+      setInterval(alternateScreenshots, 5000);
+      
+      function alternateScreenshots()
+      {
+        newScreenshot = document.getElementById('screen'+currentScreenshotIndex);
+        if (previousScreenshot)
+          previousScreenshot.style.opacity = '0';
+        newScreenshot.style.opacity = '1';
+        previousScreenshot = newScreenshot;
+        currentScreenshotIndex ++;
+        if (currentScreenshotIndex > 4) 
+          currentScreenshotIndex = 1;
+      }
+  %body
+    %header.general
+      %nav
+        %ul
+          %li
+            %a{:href => "http://www.studioamanga.com/"}
+              %img{:alt => "StdAMG", :src => "img/icon-amg.png"}
+              %span Studio AMANgA
+          %li
+            %a{:href => "http://www.studioamanga.com/contacts/"}
+              %img{:alt => "Contacts", :src => "img/icon-contacts.png"}
+              %span Contact[s]
+          %li
+            %a{:href => "http://www.studioamanga.com/onelist/"}
+              %img{:alt => "1List", :src => "img/icon-onelist.png"}
+              %span 1List
+          %li
+            %a{:href => "http://www.studioamanga.com/comicbookday/"}
+              %img{:alt => "WizBox", :src => "img/icon-comicbookday.png"}
+              %span WizBox
+    %header.top
+      %img.icon{:alt => "Icon", :src => "img/Icon-72-2x.png"}
+      %h1 WizBox
+    %section#main
+      %section#screenshots
+        %img#screen0{:alt => "iPhone", :src => "img/iphone-5.png"}
+        %img#screen4{:alt => "Issue Screenshot", :src => "img/screen-4-ip5.png"}
+        %img#screen3{:alt => "Volume Screenshot", :src => "img/screen-3-ip5.png"}
+        %img#screen2{:alt => "Library Screenshot", :src => "img/screen-2-ip5.png"}
+        %img#screen1{:alt => "Reading List Screenshot", :src => "img/screen-1-ip5.png"}
+      %section#features
+        %header.insert
+          %img.icon{:alt => "Icon", :src => "img/Icon-72-2x.png"}
+          %h1 WizBox
+        %h2 Everything you need for “Magic: The Gathering” is in your hand.
+        %p WizBox is a toolbox for “Magic: The Gathering”. You just need to take your cards and WizBox, and you have everything you need.
+        %p
+          %ul 
+            %li Game: life counters, coin and die, notes, tokens, Planeswalkers, up to 4 players!
+            %li Match: victory points counters 
+            %li History: archives of all past matches
+            %li Favorites: fastest way to useful links
+        %h2{:style => "margin-top: 50px;"}
+          %a{:href => "https://itunes.apple.com/app/comic-book-day/id325184067?mt=8"}
+            %img{:alt => "Download", :src => "img/download-appstore-225.png"}/
+    %footer
+      %a{:href => "http://www.studioamanga.com"}
+        %img{:alt => "StdAMG", :src => "img/amgmini-white.png"}/
+      %p
+        “WizBox” for iPhone and iPod touch
+        %br
+        Made by Studio AMANgA, 2010-2014

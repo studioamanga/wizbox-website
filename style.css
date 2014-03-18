@@ -1,0 +1,241 @@
+body {
+  font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+  margin: 0px;
+  background-color: #171717;
+  /* fallback/image non-cover color */
+  background-color: #171717;
+  /* Firefox 3.6+ */
+  background-image: -moz-linear-gradient(#171717, black);
+  /* Safari 4+, Chrome 1+ */
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#171717), to(black));
+  /* Safari 5.1+, Chrome 10+ */
+  background-image: -webkit-linear-gradient(#171717, black);
+  /* Opera 11.10+ */
+  background-image: -o-linear-gradient(#171717, black); }
+
+header {
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  padding-right: 20px;
+  text-align: center;
+  text-rendering: optimizeLegibility; }
+  header .icon,
+  header h1 {
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+    font-weight: normal;
+    vertical-align: top; }
+  header .icon {
+    width: 72px;
+    height: 72px;
+    padding: 1px;
+    background-color: white;
+    border-radius: 11px; }
+  header h1 {
+    padding-left: 10px;
+    position: relative;
+    top: 5px;
+    font-size: 2.4em;
+    color: white; }
+  header.insert {
+    display: none; }
+  header.general {
+    background-color: black;
+    color: white;
+    margin-top: 0;
+    padding-top: 0;
+    font-size: 0.9em; }
+    header.general ul {
+      margin: 0;
+      list-style: none; }
+      header.general ul li {
+        display: none; }
+        header.general ul li a {
+          display: block;
+          padding: 6px 17px 6px 17px;
+          color: white;
+          text-decoration: none;
+          vertical-align: top; }
+          header.general ul li a span, header.general ul li a img {
+            display: inline-block;
+            vertical-align: top;
+            height: 22px; }
+          header.general ul li a span {
+            position: relative;
+            top: 3px; }
+          header.general ul li a img {
+            margin-right: 4px;
+            border-radius: 4px; }
+          header.general ul li a:HOVER {
+            background-color: #333; }
+        header.general ul li:first-child {
+          display: inline-block; }
+
+section#main {
+  position: relative;
+  margin-top: 100px;
+  margin-bottom: 0px;
+  background-color: white;
+  color: black; }
+
+section#screenshots,
+section#features {
+  position: relative;
+  top: -70px; }
+
+section#screenshots {
+  background-clip: content-box;
+  text-align: center;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  height: 660px; }
+  section#screenshots img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    -webkit-transition: opacity 1s linear;
+    -moz-transition-property: opacity;
+    -moz-transition-duration: 1s; }
+
+section#features,
+section.msg {
+  padding: 20px;
+  line-height: 1.3em; }
+
+section.msg a {
+  color: white; }
+
+section#features h2 {
+  font-weight: normal;
+  font-size: 1.4em;
+  text-align: center;
+  margin-bottom: 30px;
+  line-height: 1.3em; }
+section#features ul {
+  margin-bottom: 30px;
+  padding-left: 35px; }
+  section#features ul li {
+    position: relative;
+    margin-bottom: 10px; }
+    section#features ul li img {
+      position: absolute;
+      left: -32px;
+      top: 8px; }
+    section#features ul li em {
+      font-style: normal;
+      margin-bottom: 30px; }
+    section#features ul li p {
+      margin: 0px;
+      font-size: 0.9em; }
+section#features a {
+  position: relative;
+  top: 30px;
+  display: block;
+  text-align: center; }
+section#features .alticon {
+  width: 50px;
+  background-color: black;
+  border: 2px solid black;
+  border-radius: 11px;
+  margin-right: 8px; }
+
+footer {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 20px;
+  color: white;
+  font-size: 0.8em;
+  line-height: 1.2em; }
+  footer a {
+    color: white;
+    text-decoration: none; }
+    footer a img {
+      opacity: 1; }
+    footer a:HOVER {
+      text-decoration: underline; }
+      footer a:HOVER img {
+        opacity: 1; }
+  footer img,
+  footer p {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0px; }
+
+@media all and (min-width: 800px) {
+  header.top {
+    display: none; }
+
+  header.insert {
+    display: block;
+    text-align: left; }
+    header.insert .icon {
+      padding-left: 0;
+      border: 3px solid white;
+      background-color: white;
+      border-radius: 15px; }
+    header.insert h1 {
+      position: relative;
+      font-size: 3em;
+      top: 27px;
+      color: black; }
+
+  header.general ul li {
+    display: inline-block; }
+
+  section#main {
+    margin-top: 150px;
+    margin-bottom: 150px;
+    text-align: center; }
+
+  section#screenshots,
+  section#features {
+    display: inline-block;
+    position: relative;
+    top: -95px;
+    height: 648px;
+    vertical-align: middle;
+    padding: 0px;
+    text-align: left; }
+
+  section#screenshots {
+    background-color: transparent;
+    width: 395px; }
+    section#screenshots img {
+      width: 395px; }
+
+  section#features {
+    padding-left: 20px;
+    top: 60px;
+    max-width: 650px; }
+    section#features h2 {
+      text-align: left; }
+    section#features a {
+      top: 10px;
+      left: 0px;
+      text-align: left; }
+
+  footer {
+    margin-bottom: 40px;
+    text-align: center; }
+
+  footer > * {
+    text-align: left; } }
+@media all and (min-width: 800px) and (max-width: 950px) {
+  section#main {
+    margin-top: 20px;
+    margin-bottom: 0px; }
+
+  section#screenshots {
+    top: 56px;
+    width: 250px; }
+    section#screenshots img {
+      width: 250px; }
+
+  section#features {
+    top: 55px;
+    max-width: 550px; } }
