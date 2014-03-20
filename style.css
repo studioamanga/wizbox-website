@@ -1,17 +1,17 @@
 body {
   font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
   margin: 0px;
-  background-color: #171717;
+  background-color: #181818;
   /* fallback/image non-cover color */
-  background-color: #171717;
+  background-color: #181818;
   /* Firefox 3.6+ */
-  background-image: -moz-linear-gradient(#171717, black);
+  background-image: -moz-linear-gradient(#181818, black);
   /* Safari 4+, Chrome 1+ */
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#171717), to(black));
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#181818), to(black));
   /* Safari 5.1+, Chrome 10+ */
-  background-image: -webkit-linear-gradient(#171717, black);
+  background-image: -webkit-linear-gradient(#181818, black);
   /* Opera 11.10+ */
-  background-image: -o-linear-gradient(#171717, black); }
+  background-image: -o-linear-gradient(#181818, black); }
 
 header {
   display: block;
@@ -31,12 +31,11 @@ header {
     width: 72px;
     height: 72px;
     padding: 1px;
-    background-color: white;
     border-radius: 11px; }
   header h1 {
     padding-left: 10px;
     position: relative;
-    top: 5px;
+    top: 13px;
     font-size: 2.4em;
     color: white; }
   header.insert {
@@ -77,7 +76,7 @@ section#main {
   position: relative;
   margin-top: 100px;
   margin-bottom: 0px;
-  background-color: white;
+  background-color: orange;
   color: black; }
 
 section#screenshots,
@@ -108,7 +107,7 @@ section.msg {
   line-height: 1.3em; }
 
 section.msg a {
-  color: white; }
+  color: orange; }
 
 section#features h2 {
   font-weight: normal;
@@ -118,7 +117,7 @@ section#features h2 {
   line-height: 1.3em; }
 section#features ul {
   margin-bottom: 30px;
-  padding-left: 35px; }
+  padding-left: 27px; }
   section#features ul li {
     position: relative;
     margin-bottom: 10px; }
@@ -175,8 +174,6 @@ footer {
     text-align: left; }
     header.insert .icon {
       padding-left: 0;
-      border: 3px solid white;
-      background-color: white;
       border-radius: 15px; }
     header.insert h1 {
       position: relative;
@@ -212,6 +209,9 @@ footer {
     padding-left: 20px;
     top: 60px;
     max-width: 650px; }
+    section#features p,
+    section#features ul {
+      max-width: 500px; }
     section#features h2 {
       text-align: left; }
     section#features a {
@@ -225,17 +225,18 @@ footer {
 
   footer > * {
     text-align: left; } }
-@media all and (min-width: 800px) and (max-width: 950px) {
+@media all and (min-width: 800px) and (max-width: 1100px) {
   section#main {
-    margin-top: 20px;
+    margin-top: 40px;
     margin-bottom: 0px; }
 
   section#screenshots {
-    top: 56px;
-    width: 250px; }
+    top: 3px;
+    width: 250px;
+    height: 540px; }
     section#screenshots img {
       width: 250px; }
 
   section#features {
-    top: 55px;
-    max-width: 550px; } }
+    top: 30px;
+    max-width: 400px; } }
