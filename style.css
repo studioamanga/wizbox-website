@@ -18,8 +18,7 @@ header {
   margin-top: 30px;
   margin-bottom: 20px;
   padding-right: 20px;
-  text-align: center;
-  text-rendering: optimizeLegibility; }
+  text-align: center; }
   header .icon,
   header h1 {
     display: inline-block;
