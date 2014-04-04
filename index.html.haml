@@ -3,10 +3,10 @@
   %head
     %meta{:charset => "utf-8"}
     %title WizBox for iPhone and iPod touch
-    %link{:href => "style.css", :rel => "stylesheet", :type => "text/css"}
-    %link{:href => "http://www.studioamanga.com/img/favicon.ico", :rel => "shortcut icon"}
-    %link{:href => "../img/touch-icon-iphone4.png", :rel => "apple-touch-icon-precomposed"}
-    %link{:href => "../img/touch-icon-ipad.png", :rel => "apple-touch-icon-precomposed", :sizes => "72x72"}
+    %link{:rel => "stylesheet",    :href => "style.css?val", :type => "text/css"}
+    %link{:rel => "shortcut icon", :href => "http://www.studioamanga.com/img/favicon.ico"}
+    %link{:rel => "apple-touch-icon-precomposed", :href => "../img/touch-icon-iphone4.png"}
+    %link{:rel => "apple-touch-icon-precomposed", :href => "../img/touch-icon-ipad.png", :sizes => "72x72"}
     %meta{:name => "description",      :content => "WizBox is everything you need for “Magic: The Gathering”, in your hand."}
     %meta{:name => "viewport",         :content => "width=device-width"}
     %meta{:name => "apple-itunes-app", :content => "app-id=325184067"}
@@ -32,19 +32,19 @@
         %ul
           %li
             %a{:href => "http://www.studioamanga.com/"}
-              %img{:alt => "StdAMG", :src => "img/icon-amg.png"}
+              %img{:alt => "StdAMG", :src => "img/icon-amg.png?val"}
               %span Studio AMANgA
           %li
             %a{:href => "http://www.studioamanga.com/contacts/"}
-              %img{:alt => "Contacts", :src => "img/icon-contacts.png"}
+              %img{:alt => "Contacts", :src => "img/icon-contacts.png?val"}
               %span Contact[s]
           %li
             %a{:href => "http://www.studioamanga.com/onelist/"}
-              %img{:alt => "1List", :src => "img/icon-onelist.png"}
+              %img{:alt => "1List", :src => "img/icon-onelist.png?val"}
               %span 1List
           %li
             %a{:href => "http://www.studioamanga.com/comicbookday/"}
-              %img{:alt => "Comic Book Day", :src => "img/icon-comicbookday.png"}
+              %img{:alt => "Comic Book Day", :src => "img/icon-comicbookday.png?val"}
               %span Comic Book Day
     %header.top
       %img.icon{:alt => "Icon", :src => "img/Icon-72-2x.png"}
@@ -67,12 +67,12 @@
           %li Match: victory points counters 
           %li History: archives and statistics for all past matches
           %li Favorites: the fastest way to useful links, including Daily MTG, Comprehensive Rules, and Gatherer
-        %div.download
+        %p.download
           %a{:href => "https://itunes.apple.com/app/comic-book-day/id325184067?mt=8"}
-            %img{:alt => "Download", :src => "img/download-appstore-225.png"}/
+            %img{:alt => "Download on the App Store", :src => "img/download-appstore.svg"}/
     %footer
       %a{:href => "http://www.studioamanga.com"}
-        %img{:alt => "StdAMG", :src => "img/amgmini-white.png"}/
+        %img{:alt => "StdAMG", :src => "img/amgmini-white.png?val"}/
       %p
         “WizBox” for iPhone and iPod touch
         %br

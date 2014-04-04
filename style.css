@@ -108,6 +108,10 @@ section.msg {
 section.msg a {
   color: orange; }
 
+.download img {
+  width: 225px;
+  height: 66px; }
+
 section#features h2 {
   font-weight: normal;
   font-size: 1.4em;
@@ -153,7 +157,8 @@ footer {
     color: white;
     text-decoration: none; }
     footer a img {
-      opacity: 1; }
+      opacity: 1;
+      width: 50px; }
     footer a:HOVER {
       text-decoration: underline; }
       footer a:HOVER img {

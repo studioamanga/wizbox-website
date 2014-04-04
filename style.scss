@@ -151,6 +151,11 @@ section.msg a {
   color: $main-background-color;
 }
 
+.download img {
+  width: 225px;
+  height: 66px;
+}
+
 section#features {
   h2 {
     font-weight: normal;
@@ -216,6 +221,7 @@ footer {
     
     img {
       opacity: 1;
+      width:   50px;
     }
     &:HOVER {
       text-decoration: underline;
