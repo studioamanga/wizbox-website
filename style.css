@@ -5,13 +5,13 @@ body {
   /* fallback/image non-cover color */
   background-color: #181818;
   /* Firefox 3.6+ */
-  background-image: -moz-linear-gradient(#181818, black);
+  background-image: -moz-linear-gradient(#181818, #000);
   /* Safari 4+, Chrome 1+ */
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#181818), to(black));
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#181818), to(#000));
   /* Safari 5.1+, Chrome 10+ */
-  background-image: -webkit-linear-gradient(#181818, black);
+  background-image: -webkit-linear-gradient(#181818, #000);
   /* Opera 11.10+ */
-  background-image: -o-linear-gradient(#181818, black); }
+  background-image: -o-linear-gradient(#181818, #000); }
 
 header {
   display: block;
@@ -244,3 +244,5 @@ footer {
   section#features {
     top: 30px;
     max-width: 400px; } }
+
+/*# sourceMappingURL=style.css.map */
