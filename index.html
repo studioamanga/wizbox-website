@@ -1,115 +1,115 @@
 <!DOCTYPE html>
 <html lang='en'>
-  <head>
-    <meta charset='utf-8'>
-    <title>WizBox for iPhone and iPod touch</title>
-    <link href='style.css?val' rel='stylesheet' type='text/css'>
-    <link href='http://www.studioamanga.com/img/favicon.ico' rel='shortcut icon'>
-    <link href='../img/touch-icon-iphone4.png' rel='apple-touch-icon-precomposed'>
-    <link href='../img/touch-icon-ipad.png' rel='apple-touch-icon-precomposed' sizes='72x72'>
-    <meta content='WizBox is everything you need for “Magic: The Gathering”, in your hand.' name='description'>
-    <meta content='width=device-width' name='viewport'>
-    <meta content='app-id=325184067' name='apple-itunes-app'>
-    <script>
+<head>
+<meta charset='utf-8'>
+<title>WizBox for iPhone and iPod touch</title>
+<link href='style.css?val' rel='stylesheet' type='text/css'>
+<link href='http://www.studioamanga.com/img/favicon.ico' rel='shortcut icon'>
+<link href='../img/touch-icon-iphone4.png' rel='apple-touch-icon-precomposed'>
+<link href='../img/touch-icon-ipad.png' rel='apple-touch-icon-precomposed' sizes='72x72'>
+<meta content='WizBox is everything you need for “Magic: The Gathering”, in your hand.' name='description'>
+<meta content='width=device-width' name='viewport'>
+<meta content='app-id=325184067' name='apple-itunes-app'>
+<script>
+  currentScreenshotIndex = 1;
+  previousScreenshot = null;
+  setInterval(alternateScreenshots, 5000);
+  
+  function alternateScreenshots()
+  {
+    newScreenshot = document.getElementById('screen'+currentScreenshotIndex);
+    if (previousScreenshot)
+      previousScreenshot.style.opacity = '0';
+    newScreenshot.style.opacity = '1';
+    previousScreenshot = newScreenshot;
+    currentScreenshotIndex ++;
+    if (currentScreenshotIndex > 4) 
       currentScreenshotIndex = 1;
-      previousScreenshot = null;
-      setInterval(alternateScreenshots, 5000);
-      
-      function alternateScreenshots()
-      {
-        newScreenshot = document.getElementById('screen'+currentScreenshotIndex);
-        if (previousScreenshot)
-          previousScreenshot.style.opacity = '0';
-        newScreenshot.style.opacity = '1';
-        previousScreenshot = newScreenshot;
-        currentScreenshotIndex ++;
-        if (currentScreenshotIndex > 4) 
-          currentScreenshotIndex = 1;
-      }
-    </script>
-  </head>
-  <body>
-    <header class='general'>
-      <nav>
-        <ul>
-          <li>
-            <a href='http://www.studioamanga.com/'>
-              <img alt='StdAMG' src='img/icon-amg.png?val'>
-              <span>Studio AMANgA</span>
-            </a>
-          </li>
-          <li>
-            <a href='http://www.studioamanga.com/contacts/'>
-              <img alt='Contacts' src='img/icon-contacts.png?val'>
-              <span>Contact[s]</span>
-            </a>
-          </li>
-          <li>
-            <a href='http://www.studioamanga.com/onelist/'>
-              <img alt='1List' src='img/icon-onelist.png?val'>
-              <span>1List</span>
-            </a>
-          </li>
-          <li>
-            <a href='http://www.studioamanga.com/comicbookday/'>
-              <img alt='Comic Book Day' src='img/icon-comicbookday.png?val'>
-              <span>Comic Book Day</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <header class='top'>
-      <img alt='Icon' class='icon' src='img/Icon-72-2x.png'>
-      <h1>WizBox</h1>
-    </header>
-    <section id='main'>
-      <section id='screenshots'>
-        <img alt='iPhone' id='screen0' src='img/iphone-5.png'>
-        <img alt='Issue Screenshot' id='screen4' src='img/screen-4-ip5.png'>
-        <img alt='Volume Screenshot' id='screen3' src='img/screen-3-ip5.png'>
-        <img alt='Library Screenshot' id='screen2' src='img/screen-2-ip5.png'>
-        <img alt='Reading List Screenshot' id='screen1' src='img/screen-1-ip5.png'>
-      </section>
-      <section id='features'>
-        <header class='insert'>
-          <img alt='Icon' class='icon' src='img/Icon-72-2x.png'>
-          <h1>WizBox</h1>
-        </header>
-        <h2>Everything you need for “Magic: The Gathering” is in your hand.</h2>
-        <p>WizBox is a toolbox for “Magic: The Gathering”. You just need to take your cards and WizBox, and you have everything you need.</p>
-        <ul>
-          <li>Game: life counters, coin and die, notes, tokens and Planeswalkers, up to 4 players</li>
-          <li>Match: victory points counters</li>
-          <li>History: archives and statistics for all past matches</li>
-          <li>Favorites: the fastest way to useful links, including Daily MTG, Comprehensive Rules, and Gatherer</li>
-        </ul>
-        <p class='download'>
-          <a href='https://itunes.apple.com/app/comic-book-day/id325184067?mt=8'>
-            <img alt='Download on the App Store' src='img/download-appstore.svg'>
-          </a>
-        </p>
-      </section>
-    </section>
-    <footer>
-      <a href='http://www.studioamanga.com'>
-        <img alt='StdAMG' src='img/amgmini-white.png?val'>
-      </a>
-      <p>
-        “WizBox” for iPhone and iPod touch
-        <br>
-        Made by Studio AMANgA, 2010-2017
-      </p>
-    </footer>
-    <script>
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-18279263-1']);
-        _gaq.push(['_trackPageview']);
-        (function() {
-          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-        })();
-    </script>
-  </body>
+  }
+</script>
+</head>
+<body>
+<header class='general'>
+<nav>
+<ul>
+<li>
+<a href='http://www.studioamanga.com/'>
+<img alt='StdAMG' src='img/icon-amg.png?val'>
+<span>Studio AMANgA</span>
+</a>
+</li>
+<li>
+<a href='http://www.studioamanga.com/contacts/'>
+<img alt='Contacts' src='img/icon-contacts.png?val'>
+<span>Contact[s]</span>
+</a>
+</li>
+<li>
+<a href='http://www.studioamanga.com/onelist/'>
+<img alt='1List' src='img/icon-onelist.png?val'>
+<span>1List</span>
+</a>
+</li>
+<li>
+<a href='http://www.studioamanga.com/comicbookday/'>
+<img alt='Comic Book Day' src='img/icon-comicbookday.png?val'>
+<span>Comic Book Day</span>
+</a>
+</li>
+</ul>
+</nav>
+</header>
+<header class='top'>
+<img alt='Icon' class='icon' src='img/Icon-72-2x.png'>
+<h1>WizBox</h1>
+</header>
+<section id='main'>
+<section id='screenshots'>
+<img alt='iPhone' id='screen0' src='img/iphone-5.png'>
+<img alt='Issue Screenshot' id='screen4' src='img/screen-4-ip5.png'>
+<img alt='Volume Screenshot' id='screen3' src='img/screen-3-ip5.png'>
+<img alt='Library Screenshot' id='screen2' src='img/screen-2-ip5.png'>
+<img alt='Reading List Screenshot' id='screen1' src='img/screen-1-ip5.png'>
+</section>
+<section id='features'>
+<header class='insert'>
+<img alt='Icon' class='icon' src='img/Icon-72-2x.png'>
+<h1>WizBox</h1>
+</header>
+<h2>Everything you need for “Magic: The Gathering” is in your hand.</h2>
+<p>WizBox is a toolbox for “Magic: The Gathering”. You just need to take your cards and WizBox, and you have everything you need.</p>
+<ul>
+<li>Game: life counters, coin and die, notes, tokens and Planeswalkers, up to 4 players</li>
+<li>Match: victory points counters</li>
+<li>History: archives and statistics for all past matches</li>
+<li>Favorites: the fastest way to useful links, including Daily MTG, Comprehensive Rules, and Gatherer</li>
+</ul>
+<p class='download'>
+<a href='https://itunes.apple.com/app/comic-book-day/id325184067?mt=8&amp;at=1000lMiD'>
+<img alt='Download on the App Store' src='img/download-appstore.svg'>
+</a>
+</p>
+</section>
+</section>
+<footer>
+<a href='http://www.studioamanga.com'>
+<img alt='StdAMG' src='img/amgmini-white.png?val'>
+</a>
+<p>
+“WizBox” for iPhone and iPod touch
+<br>
+Made by Studio AMANgA, 2010-2017
+</p>
+</footer>
+<script>
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-18279263-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+</body>
 </html>
