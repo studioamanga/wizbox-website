@@ -1,8 +1,8 @@
 all:
 	haml -f html5 index.html.haml index.html
 	sass style.scss:style.css
-	git -C ../../../Projects/iOS/WizBox/ pull
-	cp ../../../Projects/iOS/WizBox/releasenotes.html .
+	git -C ../../../Projects/WizBox/ pull
+	cp ../../../Projects/WizBox/releasenotes.html .
 	open .
 	open /Applications/Cyberduck.app
 	
