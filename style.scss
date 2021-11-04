@@ -4,6 +4,9 @@ $background-secondary-color: #000;
 $main-background-color: orange;
 $main-text-color: black;
 
+$margin-default: 20px;
+$margin-big: 40px;
+
 @mixin gradient($from, $to) {
   /* fallback/image non-cover color */
   background-color: $from;
@@ -22,6 +25,36 @@ body {
   margin: 0px;
   background-color: $background-color;
   @include gradient($background-color, $background-secondary-color);
+  text-align: center;
+}
+
+nav.general {
+  height: 30px;
+  background-color: black;
+
+  a {
+    display: inline-block;
+    padding: 0 10px 0 10px;
+    height: 30px;
+    color: white;
+    text-decoration: none;
+  
+    img {
+      margin-right: 6px;
+      height: 22px;
+      position: relative;
+      top: 4px;
+    }
+
+    span {
+      position: relative;
+      top: -1px;
+    }
+
+    &:HOVER {
+      background-color: #333;
+    }
+  }
 }
 
 header {
@@ -57,53 +90,6 @@ header {
   
   &.insert {
     display: none;
-  }
-
-  &.general {
-    background-color: black;
-    color: white;
-    margin-top: 0;
-    padding-top: 0;
-    font-size: 0.9em;
-
-    ul {
-      margin: 0;
-      list-style: none;
-
-      li {
-        display: none;
-
-        a {
-          display: block;
-          padding: 6px 17px 6px 17px;
-          color: white;
-          text-decoration: none;
-          vertical-align: top;
-
-          span, img {
-            display: inline-block;
-            vertical-align: top;
-            height: 22px;
-          }
-          span {
-            position: relative;
-            top: 3px;
-          }
-          img {
-            margin-right: 4px;
-            border-radius: 4px;
-          }
-
-          &:HOVER {
-            background-color: #333;
-          }
-        }
-
-        &:first-child {
-          display: inline-block;
-        }
-      }
-    }
   }
 }
 
@@ -157,10 +143,11 @@ section.msg a {
 }
 
 section#features {
+  text-align: left;
+
   h2 {
     font-weight: normal;
     font-size: 1.4em;
-    text-align: center;
     margin-bottom: 30px;
     line-height: 1.3em;
   }
@@ -208,26 +195,36 @@ section#features {
 }
 
 footer {
-  margin-top: 40px;
-  margin-bottom: 40px;
-  padding: 20px;
-  color: white;
+  display: inline-block;
+  margin: $margin-big auto $margin-big auto;
+  padding: 0 $margin-default;
+  color: #888;
+  text-align: left;
   font-size: 0.8em;
-  line-height: 1.2em;
+  line-height: 1.8em;
   
+  p {
+    a {
+      text-decoration: underline;
+    }
+  }
+
   a {
-    color: white;
+    color: #888;
     text-decoration: none;
     
     img {
-      opacity: 1;
-      width:   50px;
+      margin-right: 10px;
+      opacity: 0.35;
+      width: 50px;
+      text-decoration: none;
     }
+
     &:HOVER {
-      text-decoration: underline;
+      color: #444;
       
       img {
-        opacity: 1;
+        opacity: 0.6;
       }
     }
   }
@@ -282,7 +279,6 @@ footer {
     height: 560 + 88px;
     vertical-align: middle;
     padding: 0px;
-    text-align: left;
   }
   
   section#screenshots {

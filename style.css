@@ -11,7 +11,28 @@ body {
   /* Safari 5.1+, Chrome 10+ */
   background-image: -webkit-linear-gradient(#181818, #000);
   /* Opera 11.10+ */
-  background-image: -o-linear-gradient(#181818, #000); }
+  background-image: -o-linear-gradient(#181818, #000);
+  text-align: center; }
+
+nav.general {
+  height: 30px;
+  background-color: black; }
+  nav.general a {
+    display: inline-block;
+    padding: 0 10px 0 10px;
+    height: 30px;
+    color: white;
+    text-decoration: none; }
+    nav.general a img {
+      margin-right: 6px;
+      height: 22px;
+      position: relative;
+      top: 4px; }
+    nav.general a span {
+      position: relative;
+      top: -1px; }
+    nav.general a:HOVER {
+      background-color: #333; }
 
 header {
   display: block;
@@ -39,37 +60,6 @@ header {
     color: white; }
   header.insert {
     display: none; }
-  header.general {
-    background-color: black;
-    color: white;
-    margin-top: 0;
-    padding-top: 0;
-    font-size: 0.9em; }
-    header.general ul {
-      margin: 0;
-      list-style: none; }
-      header.general ul li {
-        display: none; }
-        header.general ul li a {
-          display: block;
-          padding: 6px 17px 6px 17px;
-          color: white;
-          text-decoration: none;
-          vertical-align: top; }
-          header.general ul li a span, header.general ul li a img {
-            display: inline-block;
-            vertical-align: top;
-            height: 22px; }
-          header.general ul li a span {
-            position: relative;
-            top: 3px; }
-          header.general ul li a img {
-            margin-right: 4px;
-            border-radius: 4px; }
-          header.general ul li a:HOVER {
-            background-color: #333; }
-        header.general ul li:first-child {
-          display: inline-block; }
 
 section#main {
   position: relative;
@@ -112,57 +102,63 @@ section.msg a {
   width: 225px;
   height: 66px; }
 
-section#features h2 {
-  font-weight: normal;
-  font-size: 1.4em;
-  text-align: center;
-  margin-bottom: 30px;
-  line-height: 1.3em; }
-section#features ul {
-  margin-bottom: 30px;
-  padding-left: 27px; }
-  section#features ul li {
+section#features {
+  text-align: left; }
+  section#features h2 {
+    font-weight: normal;
+    font-size: 1.4em;
+    margin-bottom: 30px;
+    line-height: 1.3em; }
+  section#features ul {
+    margin-bottom: 30px;
+    padding-left: 27px; }
+    section#features ul li {
+      position: relative;
+      margin-bottom: 10px; }
+      section#features ul li img {
+        position: absolute;
+        left: -32px;
+        top: 8px; }
+      section#features ul li em {
+        font-style: normal;
+        margin-bottom: 30px; }
+      section#features ul li p {
+        margin: 0px;
+        font-size: 0.9em; }
+  section#features a {
     position: relative;
-    margin-bottom: 10px; }
-    section#features ul li img {
-      position: absolute;
-      left: -32px;
-      top: 8px; }
-    section#features ul li em {
-      font-style: normal;
-      margin-bottom: 30px; }
-    section#features ul li p {
-      margin: 0px;
-      font-size: 0.9em; }
-section#features a {
-  position: relative;
-  top: 30px;
-  display: block;
-  text-align: center; }
-section#features .alticon {
-  width: 50px;
-  background-color: black;
-  border: 2px solid black;
-  border-radius: 11px;
-  margin-right: 8px; }
+    top: 30px;
+    display: block;
+    text-align: center; }
+  section#features .alticon {
+    width: 50px;
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 11px;
+    margin-right: 8px; }
 
 footer {
-  margin-top: 40px;
-  margin-bottom: 40px;
-  padding: 20px;
-  color: white;
+  display: inline-block;
+  margin: 40px auto 40px auto;
+  padding: 0 20px;
+  color: #888;
+  text-align: left;
   font-size: 0.8em;
-  line-height: 1.2em; }
+  line-height: 1.8em; }
+  footer p a {
+    text-decoration: underline; }
   footer a {
-    color: white;
+    color: #888;
     text-decoration: none; }
     footer a img {
-      opacity: 1;
-      width: 50px; }
+      margin-right: 10px;
+      opacity: 0.35;
+      width: 50px;
+      text-decoration: none; }
     footer a:HOVER {
-      text-decoration: underline; }
+      color: #444; }
       footer a:HOVER img {
-        opacity: 1; }
+        opacity: 0.6; }
   footer img,
   footer p {
     display: inline-block;
@@ -200,8 +196,7 @@ footer {
     top: -95px;
     height: 648px;
     vertical-align: middle;
-    padding: 0px;
-    text-align: left; }
+    padding: 0px; }
 
   section#screenshots {
     background-color: transparent;
