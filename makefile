@@ -1,5 +1,5 @@
 all:
-	haml -f html5 index.html.haml index.html
+	haml render index.html.haml > index.html
 	sass style.scss:style.css
 	git -C ~/Developer/WizBox/ pull
 	cp ~/Developer/WizBox/releasenotes.html .
